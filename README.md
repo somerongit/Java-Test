@@ -51,6 +51,7 @@ class Test {
 </details>
 
 # OOP'S
+
 <details>
 <h3>Class</h3>
 <p>Class is the collection of Objects</p>
@@ -79,7 +80,6 @@ access_modifiers Class ClassName {
 <p>State and Attributes: Color, Age</p>
 <p>Behavior: Run, Eat, Sleep</p>
 <h5>Create Object</h5>
-<p>Declaration(Animal buzo;), Instantiation(buzo=new), Initialization(buzo=new Animal();)</p>
 <p>new=> NewKeyword obj1 = new NewKeyword();</p>
 <p>newInstance=>
     ClassName object = ClassName.class.newInstance();  
@@ -101,10 +101,21 @@ ObjectOutputStream oos = new ObjectOutputStream(f);
 </p>
 <h4>Method Syntax</h4>
 <p>access_modifiers return_type methodName(list_of_parameters){ block_code}</p>
+<h4>Constructor</h4>
+<p>Constructor name should be same as Class name
+</p>
+<p>Can not have any Return Type</p>
 <h3>Inheritance</h3>
-<p></p>
+<p>It is inheriting the properties of parent 
+class into child class</p>
+<p>Inheritance is the procedure by which
+one object acquires all the properties
+ and behaviors of a parent object</p>
+<h4>Types</h4>
+<img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/types_of_inheritance.png">
 <h3>Polymorphism</h3>
-<p></p>
+
+<img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/poly_java.jpg" wdith="50"><img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/poly2_java.png" wdith="50" >
 <h3>Encapsulation</h3>
 <p></p>
 <h3>Abstraction</h3>
