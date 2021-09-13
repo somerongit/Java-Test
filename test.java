@@ -5,7 +5,7 @@ class Online {
    public Online(String passName, int passAge){
          this.name=passName;
          this.age=passAge;
-         System.out.println("Object is Initialized!");
+         System.out.println("Parent Object is Initialized!");
    }
    public void display(){
 
@@ -18,9 +18,7 @@ class Online {
 class Test extends Online{
    public Test(String passName, int passAge){
          super(passName,passAge);
-         name=passName;
-         age=passAge;
-         System.out.println("Object is Initialized!");
+         System.out.println("Child Object is Initialized!");
    }
 
    public static void  main(String[] arg){
