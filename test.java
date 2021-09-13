@@ -34,28 +34,34 @@ interface Online {
 }
 
 class TestParent{
+        Printer print1 = new Printer();
         String name;
         int age;
+   public void display(){
+
+        print1.coutln("Display is Called!");
+        print1.coutln("Name is: "+name+"\nAge is: "+age);
+   }
 }
 
 public class Test extends TestParent implements Online{ 
 
    public Test(String passName, int passAge){
-         super();
          this.name=passName;
          this.age=passAge;
          print.coutln("Child Object is Initialized!");
    }
-   public void display(){
 
-        print.coutln("Display is Called!");
-        print.coutln("Name is: "+name+"\nAge is: "+age+"\nPI Value: "+pi);
-   }
    public static void  main(String[] arg){
 
         System.out.println("Hi! I am Som 3.0");
 
-        Test obj=new Test("Oke",25);
+        Test obj=new Test("Oke",25){
+           public void display(){
+                System.out.println("Display is Called defined anonymously!");
+                System.out.println("Name is: "+name+"\nAge is: "+age+"\nPI : "+pi);
+             }
+        };
         obj.display();
    }
 }
