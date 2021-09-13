@@ -19,23 +19,31 @@ final class Printer{ // This class can not be extends by any other class
          System.out.println(input);
    }
 }
-abstract class Online { 
+interface Online { 
 
         Printer print = new Printer();
+/* We can't declear var inside Interface
         String name;
         int age;
+*/
         final double pi=3.141;
-   public Online(String passName, int passAge){
-        this.name=passName;
-        this.age=passAge;
-   }
+        String hi="Hi I'm Java";
+        static final String devName="Someron";
    public abstract void display();
 
 }
 
-public class Test extends Online{ 
+class TestParent{
+        String name;
+        int age;
+}
+
+public class Test extends TestParent implements Online{ 
+
    public Test(String passName, int passAge){
-         super(passName,passAge);
+         super();
+         this.name=passName;
+         this.age=passAge;
          print.coutln("Child Object is Initialized!");
    }
    public void display(){
