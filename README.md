@@ -111,13 +111,15 @@ class into child class</p>
 <p>Inheritance is the procedure by which
 one object acquires all the properties
  and behaviors of a parent object</p>
+ <p>Private, Constructor this 2 property never inherited into Chlid calss from the Parents class</p>
 <h4>Types</h4>
 <img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/types_of_inheritance.png">
 <h3>Polymorphism</h3>
 
 <img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/poly_java.jpg" wdith="50"><img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/poly2_java.png" wdith="50" >
 <h3>Encapsulation</h3>
-<p></p>
+<img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/encapsulation_java.png">
+<img src="https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/abstract_interface_java.png">
 <h3>Abstraction</h3>
-<p></p>
+<img src='https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/abstract2_java.png'>
 </details>
