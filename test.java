@@ -56,6 +56,8 @@ public class Test extends TestParent implements Online{
 
         System.out.println("Hi! I am Som 3.0");
 
+// Whenever we use anonymous class or interface it create one class file with $
+
         Test obj=new Test("Oke",25){
            public void display(){
                 System.out.println("Display is Called defined anonymously!");
@@ -63,5 +65,16 @@ public class Test extends TestParent implements Online{
              }
         };
         obj.display();
+
+//We can't create obj of a interface. I am implemented the interface anonymously!
+
+        Online objOnline = new Online(){
+        Printer print = new Printer();
+        public void display(){
+            print.coutln("Display is Called by creating obj of a interface!");
+           }
+       };
+
+        objOnline.display();
    }
 }
