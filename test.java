@@ -1,7 +1,30 @@
+final class Printer{ // This class can not be extends by any other class
+      protected final void cout(Number input){
+         System.out.print(input);
+   }
+      protected final void cout(String input){
+         System.out.print(input);
+   }
+      protected final void cout(Boolean input){
+         System.out.print(input);
+   }
+
+      protected final void coutln(Number input){
+         System.out.println(input);
+   }
+      protected final void coutln(String input){
+         System.out.println(input);
+   }
+      protected final void coutln(Boolean input){
+         System.out.println(input);
+   }
+}
 abstract class Online { 
 
+        Printer print = new Printer();
         String name;
         int age;
+        final double pi=3.141;
    public Online(String passName, int passAge){
         this.name=passName;
         this.age=passAge;
@@ -10,15 +33,15 @@ abstract class Online {
 
 }
 
-class Test extends Online{
+public class Test extends Online{ 
    public Test(String passName, int passAge){
          super(passName,passAge);
-         System.out.println("Child Object is Initialized!");
+         print.coutln("Child Object is Initialized!");
    }
    public void display(){
 
-        System.out.println("Display is Called!");
-        System.out.println("Name is: "+name+"\nAge is: "+age);
+        print.coutln("Display is Called!");
+        print.coutln("Name is: "+name+"\nAge is: "+age+"\nPI Value: "+pi);
    }
    public static void  main(String[] arg){
 
