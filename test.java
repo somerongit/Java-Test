@@ -1,17 +1,12 @@
-class Online { 
+abstract class Online { 
 
         String name;
         int age;
    public Online(String passName, int passAge){
-         this.name=passName;
-         this.age=passAge;
-         System.out.println("Parent Object is Initialized!");
+        this.name=passName;
+        this.age=passAge;
    }
-   public void display(){
-
-        System.out.println("Display is Called!");
-        System.out.println("Name is: "+name+"\nAge is: "+age);
-   }
+   public abstract void display();
 
 }
 
@@ -20,7 +15,11 @@ class Test extends Online{
          super(passName,passAge);
          System.out.println("Child Object is Initialized!");
    }
+   public void display(){
 
+        System.out.println("Display is Called!");
+        System.out.println("Name is: "+name+"\nAge is: "+age);
+   }
    public static void  main(String[] arg){
 
         System.out.println("Hi! I am Som 3.0");
