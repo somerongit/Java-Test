@@ -19,6 +19,7 @@ final class Printer{ // This class can not be extends by any other class
          System.out.println(input);
    }
 }
+
 interface Online { 
 
         Printer print = new Printer();
@@ -59,6 +60,7 @@ public class Test extends TestParent implements Online{
 // Whenever we use anonymous class or interface it create one class file with $
 
         Test obj=new Test("Oke",25){
+
            public void display(){
                 System.out.println("Display is Called defined anonymously!");
                 System.out.println("Name is: "+name+"\nAge is: "+age+"\nPI : "+pi);
