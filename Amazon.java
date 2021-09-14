@@ -1,27 +1,15 @@
 @FunctionalInterface
 interface Abc{
     void display();
-    default void initAbc(){System.out.println("Define Method Inside Abc Interface!");}
+    int Age=25;// It is a constant final
+// Interface can have a static method too
+    static void initAbc(){System.out.println("Define Static Method Inside Abc Interface!");}
 }
 
-interface Abc2{
-    default void initAbc(){System.out.println("Define Method Inside Abc2 Interface!");}
-}
-
-class Amazon implements Abc,Abc2{
-      public void display(){
-      System.out.println("Interface is Implemeted");
-      }
-      public void initAbc(){
-
-      Abc2.super.initAbc();
-
-//      System.out.println("Multiple Implements with common function by overrideing methods");
-      }
+class Amazon{
       public static void main(String args[]){
-          Amazon obj = new Amazon();
-          obj.initAbc();
-          obj.display();
+          
+          Abc.initAbc();
 
        }
 
