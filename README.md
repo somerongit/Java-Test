@@ -124,3 +124,11 @@ one object acquires all the properties
 <h3>Abstraction</h3>
 <img src='https://raw.githubusercontent.com/somerongit/somerongit/main/img/java/abstract2_java.png'>
 </details>
+
+## [Algorithms](https://github.com/TheAlgorithms/Java)
+## [Cheat Sheet](https://github.com/in28minutes/java-cheat-sheet)
+	
+<!-- ghttps://github.com/ABSphreak/readme-jokesg -->
+	
+![Jokes Card](https://readme-jokes.vercel.app/api?theme=buefy)
+	
